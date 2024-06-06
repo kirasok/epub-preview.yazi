@@ -2,6 +2,11 @@
 
 [Yazi](https://github.com/sxyazi/yazi) plugin to preview `application/epub+zip` files
 
+<details>
+  <summary>Show case</summary>
+  <img src="https://github.com/kirasok/epub-preview.yazi/assets/75790517/df829053-ceeb-409a-bd4d-175ca2e809af"/>
+</details>
+
 ## Requirements
 
 - [yazi](https://github.com/sxyazi/yazi)
