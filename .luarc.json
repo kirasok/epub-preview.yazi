@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "ya",
+        "fs",
+        "PREVIEW",
+        "Command"
+    ]
+}
