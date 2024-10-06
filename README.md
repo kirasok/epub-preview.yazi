@@ -10,9 +10,10 @@
 ## Requirements
 
 - [yazi](https://github.com/sxyazi/yazi)
-- An epub-thumbnailer:
+- At least one of the following epub-thumbnailer command line tools:
   - [epub-thumbnailer](https://github.com/marianosimone/epub-thumbnailer), or
   - [gnome-epub-thumbnailer](https://gitlab.gnome.org/GNOME/gnome-epub-thumbnailer)
+    (available as `gnome-epub-thumbnailer` package in Ubuntu and arch)
 
 ## Installation
 
