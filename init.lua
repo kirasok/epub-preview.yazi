@@ -15,6 +15,7 @@ end
 function M:seek() end
 
 function M:preload()
+	ya.err("huhu")
 	local cache = ya.file_cache(self)
 	if not cache or fs.cha(cache) then
 		return 1
@@ -22,6 +23,7 @@ function M:preload()
 
 	local size = math.min(PREVIEW.max_width, PREVIEW.max_height)
 
+	-- First try to use `epub-thumbnailer` command
 	local child, code = Command("epub-thumbnailer"):args({
 		tostring(self.file.url),
 		tostring(cache),
@@ -29,8 +31,16 @@ function M:preload()
 	}):spawn()
 
 	if not child then
-		ya.err("spawn `epub-thumbnailer` command returns " .. tostring(code))
-		return 0
+		-- If `epub-thumbnailer` command is not available, try to use `gnome-epub-thumbnailer` command
+		child, code = Command("gnome-epub-thumbnailer"):args({
+			tostring(self.file.url),
+			tostring(cache),
+			-- gnome-epub-thumbnailer does not need a size
+		}):spawn()
+		if not child then
+			ya.err("spawn `gnome-epub-thumbnailer` command returns " .. tostring(code))
+			return 0
+		end
 	end
 
 	local status = child:wait()

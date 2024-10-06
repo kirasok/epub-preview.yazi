@@ -10,7 +10,9 @@
 ## Requirements
 
 - [yazi](https://github.com/sxyazi/yazi)
-- [epub-thumbnailer](https://github.com/marianosimone/epub-thumbnailer)
+- An epub-thumbnailer:
+  - [epub-thumbnailer](https://github.com/marianosimone/epub-thumbnailer), or
+  - [gnome-epub-thumbnailer](https://gitlab.gnome.org/GNOME/gnome-epub-thumbnailer)
 
 ## Installation
 
