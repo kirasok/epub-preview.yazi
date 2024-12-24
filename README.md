@@ -24,6 +24,7 @@ git clone https://github.com/kirasok/epub-preview.yazi.git ~/.config/yazi/plugin
 ```
 
 or with [`ya-pack`](https://yazi-rs.github.io/docs/cli/#package-manager)
+
 ```sh
 ya pack -a kirasok/epub-preview
 ```
@@ -54,4 +55,4 @@ run = "epub-preview"
   run = "ouch" 
   ```
 
-- Check Yazi log file (see [yazi.rs](https://yazi-rs.github.io/docs/plugins/overview/#logging) where to find it) 
+- Check Yazi log file (see [yazi.rs](https://yazi-rs.github.io/docs/plugins/overview/#logging) where to find it)
