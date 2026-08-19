@@ -7,8 +7,8 @@ function M:peek(job)
 	end
 
 	if M:preload(job) == 1 then
-		ya.image_show(cache, job.area)
-		ya.preview_widget(job, {})
+		local _, err = ya.image_show(cache, job.area)
+		ya.preview_widget(job, err)
 	end
 end
 
